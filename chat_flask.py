@@ -21,7 +21,7 @@ app.secret_key = "your_secret_key"  # Change this to a secure secret in producti
 # -------------------------
 # 1) OPENROUTER / OPENAI SETUP
 # -------------------------
-OPENROUTER_API_KEY = "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"  # Replace with your actual API key
+OPENROUTER_API_KEY = ""  # Replace with your actual API key
 
 client = openai.OpenAI(
     base_url="https://openrouter.ai/api/v1",
@@ -176,4 +176,3 @@ def index():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80, debug=True)
-
